@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Counter</title>
+</head>
+<body>
+    <h1> Counter </h1>
+    <p>{{session['visitcount']}}</p>
+    <a href="/destroy_session">Destroy session</a>
+    <p><a href="/plus2"><button>Plus 2</button></a></p>
+    <div>
+        <form action="/custom" method="post">
+            <label for="how">How much to increment?</label>
+            <input type="number" name="howmuch" id="">
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
